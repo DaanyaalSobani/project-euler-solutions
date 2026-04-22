@@ -1,0 +1,2 @@
+Need to write a prgiram that produces the sum of the squares of the first n odd numbers.
+Where n is a positive integer.
