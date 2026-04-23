@@ -21,12 +21,15 @@ fn fib() -> Fib {
 }
 
 fn main() {
-    let cutoff : u64 = args().nth(1).expect("Please provide a number").parse().expect("Please provide a valid number");
+   let cutoff: u64 = args().nth(1)
+    .unwrap_or_else(|| "4000000".to_string())
+    .parse()
+    .expect("Please provide a valid number");
 
     let result: u64 = fib()
-    .take_while(|&n|n <= cutoff)
-    .filter(|&n| n % 2 == 0)
-    .sum();
+        .take_while(|&n|n <= cutoff)
+        .filter(|&n| n % 2 == 0)
+        .sum();
 
     println!("Sum of even Fibonacci numbers up to {}: {}", cutoff, result);
 }
