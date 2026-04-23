@@ -1,2 +1,6 @@
-Need to write a prgiram that produces the sum of the squares of the first n odd numbers.
-Where n is a positive integer.
+A number is a perfect square, or a square number, if it is the square of a positive integer.
+For example,  is a square number because    ; it is also an odd square.
+
+The first 5 square numbers are:1,4,9,16,25 and the sum of the odd squares is 1+9+25=35  .
+
+Among the first 869 thousand square numbers, what is the sum of all the odd squares?

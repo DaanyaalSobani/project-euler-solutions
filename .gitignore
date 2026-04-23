@@ -1,0 +1,6 @@
+# Rust build artifacts
+target/
+**/target/
+
+# Keep .vscode tracked
+!.vscode/
