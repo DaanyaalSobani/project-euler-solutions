@@ -8,17 +8,17 @@ Each problem lives in its own crate under `problems/` and typically includes mul
 
 ```text
 problems/
-  problem-zero/   ← warmup / example problem
-  problem-001/    ← and so on...
+  problem-000/   ← warmup / example problem
+  problem-001/   ← and so on...
 ```
 
 ## Running a solution
 
 ```bash
-cargo run -p problem-zero -- <N>
+cargo run -p problem-001 -- <N>
 ```
 
-Replace `problem-zero` with the relevant package name and supply any required arguments.
+Replace `problem-001` with the relevant package name and supply any required arguments.
 
 ## Building everything
 

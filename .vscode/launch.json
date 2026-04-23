@@ -2,28 +2,37 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Run: problem-zero",
+            "name": "Run: problem-000",
             "type": "lldb",
             "request": "launch",
             "cargo": {
-                "args": ["run", "--bin=problem-zero"]
+                "args": ["run", "--bin=problem-000"]
             },
-            "args": ["${input:problemZeroN}"]
+            "args": ["${input:number_1}"]
         },
         {
-            "name": "Test: problem-zero",
+            "name": "Run: problem-001",
             "type": "lldb",
             "request": "launch",
             "cargo": {
-                "args": ["test", "--bin=problem-zero"]
+                "args": ["run", "--bin=problem-001"]
+            },
+            "args": ["${input:number_1}"]
+        },
+        {
+            "name": "Test: problem-000",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": ["test", "--bin=problem-000"]
             }
         }
     ],
     "inputs": [
         {
-            "id": "problemZeroN",
+            "id": "number_1",
             "type": "promptString",
-            "description": "problem-zero: upper bound N",
+            "description": "Number",
             "default": "869000"
         }
     ]

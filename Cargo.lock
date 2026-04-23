@@ -3,5 +3,13 @@
 version = 4
 
 [[package]]
-name = "problem-zero"
+name = "problem-000"
+version = "0.1.0"
+
+[[package]]
+name = "problem-001"
+version = "0.1.0"
+
+[[package]]
+name = "problem-002"
 version = "0.1.0"
