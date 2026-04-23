@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run: problem-zero",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": ["run", "--bin=problem-zero"]
+            },
+            "args": ["${input:problemZeroN}"]
+        },
+        {
+            "name": "Test: problem-zero",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": ["test", "--bin=problem-zero"]
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "problemZeroN",
+            "type": "promptString",
+            "description": "problem-zero: upper bound N",
+            "default": "869000"
+        }
+    ]
+}
