@@ -1,5 +1,9 @@
 [workspace]
 members = [
     "problems/*",
+    "utils"
 ]
 resolver = "2"
+
+[workspace.dependencies]
+utils = { path = "utils" }
