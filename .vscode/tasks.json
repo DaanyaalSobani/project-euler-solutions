@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "cargo build problem",
+            "type": "shell",
+            "command": "cargo",
+            "args": ["build", "-p", "${input:problem_name}"],
+            "problemMatcher": ["$rustc"],
+            "group": "build"
+        }
+    ],
+    "inputs": [
+        {
+            "id": "problem_name",
+            "type": "promptString",
+            "description": "Crate name (e.g. problem-011)",
+            "default": "problem-011"
+        }
+    ]
+}

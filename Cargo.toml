@@ -7,3 +7,4 @@ resolver = "2"
 
 [workspace.dependencies]
 utils = { path = "utils" }
+anyhow = "1"

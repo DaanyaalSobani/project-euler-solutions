@@ -2,6 +2,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Debug problem (cppvsdbg)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/${input:problem_name}.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}/problems/${input:problem_name}",
+            "console": "internalConsole",
+            "preLaunchTask": "cargo build problem",
+            "visualizerFile": "${env:USERPROFILE}/.rustup/toolchains/nightly-x86_64-pc-windows-msvc/lib/rustlib/etc/libstd.natvis",
+            "showDisplayString": true
+        },
+        {
             "name": "Run: problem-000",
             "type": "lldb",
             "request": "launch",
@@ -34,6 +46,12 @@
             "type": "promptString",
             "description": "Number",
             "default": "869000"
+        },
+        {
+            "id": "problem_name",
+            "type": "promptString",
+            "description": "Crate name (e.g. problem-011)",
+            "default": "problem-011"
         }
     ]
 }
